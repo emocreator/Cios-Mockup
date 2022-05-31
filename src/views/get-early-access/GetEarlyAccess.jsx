@@ -3,6 +3,7 @@ import TextField from "../../components/common/TextField";
 import Button from "../../components/common/Button";
 import Auth from "../../components/layout/Auth";
 import { useNavigate } from "react-router-dom";
+import SelectField from "../../components/common/SelectField";
 
 function GetEarlyAccess() {
   const navigate = useNavigate();
@@ -39,11 +40,19 @@ function GetEarlyAccess() {
             </a>
           }
         />
-        <TextField
+        <SelectField
           label="What best describes you?"
-          type="text"
-          id={483443}
-          defaultValue="Landlord"
+          id={5674556}
+          options={[
+            {
+              name: "Landlord",
+              value: "Landlord",
+            },
+            {
+              name: "Landlord 2",
+              value: "Landlord 2",
+            },
+          ]}
         />
       </div>
       <div>

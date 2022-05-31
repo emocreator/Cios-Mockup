@@ -9,18 +9,42 @@ function TenantSignup() {
   return (
     <Auth title="Cios for tenants.">
       <div className="flex flex-col gap-6">
-      <TextField
+      <SelectField
           label="Which payment method do you use to pay rent?"
-          type="text"
-          id={6765345345}
-          placeholder="Select an option from the dropdown"
+          id={5674556}
+          options={[
+            {
+              name: "Select an option from the dropdown",
+              value: "Landlord",
+            },
+            {
+              name: "Landlord 2",
+              value: "Landlord 2",
+            },
+            {
+              name: "Landlord 3",
+              value: "Landlord 3",
+            },
+          ]}
         />
-        <TextField
+      <SelectField
           label="How often do you miss or are late on a rent payment?"
-          type="text"
-          id={6765345345}
-          placeholder="Select an option from the dropdown"
-        />
+          id={5674556}
+          options={[
+            {
+              name: "Select an option from the dropdown",
+              value: "Landlord",
+            },
+            {
+              name: "Landlord 2",
+              value: "Landlord 2",
+            },
+            {
+              name: "Landlord 3",
+              value: "Landlord 3",
+            },
+          ]}
+        />      
         <TextField
           label="What is the common reason you miss or are late on rent?"
           type="text"
